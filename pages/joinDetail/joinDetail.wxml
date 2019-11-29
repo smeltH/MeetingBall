@@ -1,0 +1,31 @@
+<!-- 加入的详情页面 -->
+<view>
+    <view class='courtImg'>
+        <image src='{{courtInfo.imgUrl}}'></image>
+    </view>
+    <view class='courtNews'>
+        <view>
+            <image class='icon' src='/img/holder.png'></image>{{content.user}}
+            <image class='icon message' src='/img/message.png'></image>
+        </view>
+        <view class='time'>
+            <image class='icon' src='/img/clock.png'></image>开球时间：{{content.aTime}}
+        </view>
+        <view>
+            <image class='icon' src='/img/address.png'></image>{{courtInfo.address}}
+        </view>
+        <view>
+            <image class='icon' src='/img/court_name.png'></image>{{courtInfo.name}}
+        </view>
+        <view>
+            <image class='icon' src='/img/people.png'></image>人数情况：{{content.currPeople}}/{{content.numbers}}
+        </view>
+        <view>
+            <image class='icon' src='/img/clock.png'></image>发布时间：{{content.y_m_d}}{{content.h_m}}
+        </view>
+        <view class='tip'>备注：{{content.tips}}</view>
+    </view>
+    <view class='applyJoin'>
+        <button form-type="submit" lang="zh_CN" bindtap="applyJoin">申请加入</button>
+    </view>
+</view>

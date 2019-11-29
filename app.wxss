@@ -1,0 +1,17 @@
+/* 清除默认样式 */
+button{
+    padding: 0;
+    margin: 0;
+}
+button::after{
+    border: none;
+}
+form{
+    display: block;
+}
+image{
+    display: block;
+}
+text {
+    line-height: 25px;
+}

@@ -1,0 +1,39 @@
+<!--pages/currentCourt/currentCourt.wxml-->
+<view class='currentCourt'>
+    <view class='img'>
+        <image src='{{courtInfo.imgUrl}}'></image>
+    </view>
+    <view class='currentMessage'>
+        <view class='messageLists'>
+            <text>
+            球场名：{{courtInfo.name}}
+            </text>
+        </view>
+        <view class='messageLists'>
+            <text>
+                地址：{{courtInfo.address}}
+            </text>
+        </view>
+        <view class='messageLists'>
+            <text>
+            当前距离：{{courtInfo.distance}}KM
+            </text>
+        </view>
+        <view class='messageLists'>
+            <text>
+            联系电话：{{courtInfo.telephone}}
+            </text>
+        </view>
+        <view class='messageLists'>
+            <text>
+            评分：{{courtInfo.overall_rating}}
+            </text>
+        </view>
+    </view>
+    <view class='toPoint'>
+        <navigator url='/pages/beginMeet/beginMeet?id={{courtInfo._id}}&isCurr=true'
+        open-type='navigate'>
+            <button class='btn'>发起约球</button>
+        </navigator>
+    </view>
+</view>

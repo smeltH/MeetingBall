@@ -1,0 +1,50 @@
+/* pages/beginMeet/beginMeet.wxss */
+.beginMeet{
+    font-family:Microsoft YaHei; 
+}
+.beginMeet .detail{
+    display: flex;
+    justify-content:space-between;
+    padding: 6px 10px;
+    border-bottom: 1px solid #ccc;
+}
+.beginMeet .detail > text{
+    vertical-align: middle;
+}
+.beginMeet .detail input{
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+    text-align: right;
+}
+.beginMeet .btn{
+    border-bottom: none;
+}
+.beginMeet .btn button{
+    width: 80%;
+    height: 50px;
+    margin: 20px auto 0;
+    text-align: center;
+    line-height: 50px;
+    background-color: #f8b551;
+}
+.beginMeet .tip > view{
+    width: 100%
+}
+.beginMeet .tip textarea{
+    display: block;
+    width: 100%;
+    padding-top: 6px;
+    max-height: 150rpx;
+    font-size: 16px;
+    color: #aaa;
+}
+.beginMeet picker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 150px;
+    min-width: 50px;
+    text-align: center;
+    line-height: 100%;
+}

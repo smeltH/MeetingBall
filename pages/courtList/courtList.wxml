@@ -1,0 +1,12 @@
+<!--pages/courtList/courtList.wxml-->
+<import src='/template/searchCourtList/searchCourtList'/>
+<view>
+    <scroll-view class='courtList'
+    scroll-y
+    bindscrolltolower='loadingMore'
+    >
+        <view wx:for="{{courtList}}" wx:key='_id'>
+            <template is="searchCourtList" data="{{item}}"/>
+        </view>
+    </scroll-view>
+</view>

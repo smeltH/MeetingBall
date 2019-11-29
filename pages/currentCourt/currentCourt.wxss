@@ -1,0 +1,38 @@
+/* pages/currentCourt/currentCourt.wxss */
+.currentCourt{
+    background-color: #ccc;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.currentCourt .img image{
+    width: 100%;
+    height: 175px;
+}
+.currentCourt .currentMessage{
+    display: flex;
+    flex-direction: column;
+}
+.currentCourt .currentMessage .messageLists{
+    width: 100vw;
+    height: 50px;
+    border-bottom: 1px solid #9b9b9b
+}
+.currentCourt .currentMessage .messageLists text{
+    display: inline-block;
+    padding-left: 4%;
+    width: 96%;
+    height: 100%;
+    line-height: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #efefef;
+}
+.currentCourt .toPoint navigator{
+    width: 80%;
+    margin: 20px auto;
+}
+.currentCourt .toPoint .btn{
+    background-color: #f8b551;
+    color: #fff;
+}

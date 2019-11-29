@@ -1,0 +1,5 @@
+<!--pages/meet/meet.wxml-->
+<import src="/template/meet_page/meet_page"/>
+<view wx:for="{{courts}}" wx:key='_id'>
+    <template is="meet_page" data="{{item}}"/>
+</view>

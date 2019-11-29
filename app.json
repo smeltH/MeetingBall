@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/beginView/beginView",
+        "pages/meet/meet",
+        "pages/us/us",
+        "pages/courtDetail/courtDetail",
+        "pages/currentCourt/currentCourt",
+        "pages/courtList/courtList",
+        "pages/joinDetail/joinDetail",
+        "pages/beginMeet/beginMeet",
+        "pages/mySend/mySend",
+        "pages/myJoin/myJoin",
+        "pages/sends/sends",
+        "pages/joins/joins"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fa4646",
+        "navigationBarTitleText": "篮球约球",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#ccc"
+    },
+    "tabBar": {
+        "color": "#000",
+        "selectedColor": "#fa4646",
+        "backgroundColor": "#fbfbfd",
+        "position": "bottom",
+        "list": [
+            {
+                "selectedIconPath": "img/home-s.png",
+                "iconPath": "img/home-no.png",
+                "pagePath": "pages/home/home",
+                "text": "首页"
+            },
+            {
+                "selectedIconPath": "img/meet-s.png",
+                "iconPath": "img/meet-no.png",
+                "pagePath": "pages/meet/meet",
+                "text": "约起来"
+            },
+            {
+                "selectedIconPath": "img/us-s.png",
+                "iconPath": "img/us-no.png",
+                "pagePath": "pages/us/us",
+                "text": "我的"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
+    },
+    "sitemapLocation": "sitemap.json",
+    "cloud": true
+}

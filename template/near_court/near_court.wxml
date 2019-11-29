@@ -1,0 +1,12 @@
+<template name='nearCourt' data="{{item}}">
+    <!-- <navigator url="/pages/currentCourt/currentCourt?address={{item.address}}&name={{item.name}}&distance={{item.distance}}&lat={{item.location_lat}}&lng={{item.location_lng}}&encodeImg={{item.encodeImg}}&overall_rating={{item.detail_info.overall_rating}}&telephone={{item.telephone}}" -->
+    <navigator url="/pages/currentCourt/currentCourt?id={{item._id}}"
+    target='self'
+    hover-class="none"
+    open-type='navigate'>
+        <view class='recommendCourt'>
+            <image src='{{item.imgUrl}}'></image>
+            <view class='court_name'>{{item.name}}</view>
+        </view> 
+    </navigator>
+</template>

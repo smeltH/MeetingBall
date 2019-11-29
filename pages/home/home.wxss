@@ -1,0 +1,94 @@
+/* pages/home/home.wxss */
+@import "/template/near_court/near_court";
+/* header部分 */
+.header{
+    display: flex;
+    height: 80rpx;
+    background-color: #fa4646;
+    color: #fff;
+}
+.header > view{
+    flex: 1;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 12px;
+}
+.header > view.location image{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 8px 0 12px;
+    vertical-align: middle;
+}
+.header > view.location text{
+    display: inline-block;
+    line-height: 80rpx;
+    margin-left: 4px;
+}
+.header > view.search_box{
+    flex: 4;
+    height: 64rpx;
+    padding: 2px 2px 6px 2px;
+    
+}
+.header > view.search_box form{
+    position: relative;
+}
+.header > view.search_box form button{
+    position: absolute;
+    display: block;
+    top: 1px;
+    right: 20px;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fa4646;
+    font-size: 14px;
+    color: #fff;
+    z-index: 9;
+}
+.header > view.search_box form image{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.header > view.search_box input{
+    width: 75%;
+    height: 64rpx;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* 首页轮播位置 */
+.home_banner_show{
+    width: 100%;
+    height: 350rpx;
+    background-color: #ccc;
+}
+.home_banner_show image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 查询附近球场按钮 */
+.near_court{
+    background-color: #fff;
+    overflow: hidden;
+}
+.near_court > navigator{
+    display: block;
+    width: 60%;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin: 30rpx auto;
+}
+.near_court button{
+    background-color: #f8b551;
+    color: #fff;
+}
+.near_court .courts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

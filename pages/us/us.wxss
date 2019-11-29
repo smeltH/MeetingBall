@@ -1,0 +1,71 @@
+/* pages/us/us.wxss */
+.us{
+    height: 100vh;
+    overflow: hidden;
+}
+.us .top{
+   display: flex;
+   background-color: #A9A9A9;
+}
+.us .head_pic{
+    flex: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 20px 0 10px 30px;
+}
+.us .head_pic image{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.us .user_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 4;
+}
+.us .user_name text{
+    color: #fff;
+}
+.us .aboutMe{
+    height: 100vh;
+    background-color: #eee;
+    overflow: hidden;
+}
+.us .aboutMe .detail{
+    width: 94%;
+    height: 50px;
+    margin: 10px auto 0;
+    background-color: #bbb;
+    border-bottom: 1px solid #aaa;
+    border-radius: 10px;
+}
+.us .aboutMe .title{
+    background-color: #eee;
+    border-bottom: none;
+}
+.us .aboutMe .detail text{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    padding-left: 20px;
+    vertical-align: top;
+}
+.us .aboutMe .title text{
+    color: #aaa;
+}
+.us .aboutMe .detail image{
+    float: right;
+    width: 30px;
+    height: 30px;
+    padding: 10px 20px 0 0;
+}
+.us .aboutMe .detail .pic{
+    display: inline-block;
+    float: none;
+    padding: 10px 0 10px 10px;
+    vertical-align: middle;
+}

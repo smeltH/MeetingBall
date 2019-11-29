@@ -1,0 +1,15 @@
+<template name="searchCourtList">
+    <view class='recommendCourt'>
+        <image src='{{item.imgUrl}}'></image>
+        <view class='court_message court_name'>球场名：{{item.name}}</view>
+        <view class='court_message court_address'>地址：{{item.address}}</view>
+        <view class='court_message court_comment'>总体评分：{{item.overall_rating}}</view>
+        <view class='court_message court_distance'>当前距离：{{item.distance}}KM</view>
+        <view class='court_message court_phone'>联系电话：{{item.telephone}}</view>
+        <view class='meet'>
+        <navigator url='/pages/beginMeet/beginMeet?id={{item._id}}'>
+            <button class='meet_btn'>约</button>
+        </navigator>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,71 @@
+<!--pages/beginMeet/beginMeet.wxml-->
+<view class='beginMeet'>
+    <form form-type='submit' class='form' bindsubmit='submitForm'>
+        <view class='detail'>
+            <text>发起人：</text>
+            <input type='text' name="user" maxlength="8"/>
+        </view>
+        <view class='detail'>
+            <text>选择日期：</text>
+            <picker 
+                mode="date"
+                value="{{date}}"
+                start="{{date_start}}"
+                end="{{date_end}}"
+                name="date"
+                bindchange="chooseDate">{{date}}
+            </picker>
+        </view>
+        <view class='detail'>
+            <text>具体时间：</text>
+            <picker 
+                mode="time"
+                value="{{time}}"
+                name="time"
+                start="{{time_start}}"
+                bindchange="chooseTime">{{time}}
+            </picker>
+        </view>
+        <view class='detail'>
+            <text>球场名：</text>
+            <picker 
+                disabled="{{isDisabled}}"
+                mode="selector"
+                range="{{courts}}"
+                value="{{currCourt}}"
+                range-key="{{'name'}}"
+                name="address"
+                bindchange="chooseCourt">{{currCourt}}
+            </picker>
+        </view>
+        <view class='detail'>
+            <text>参与人数：</text>
+            <view>
+                <input
+                    type="number"
+                    confirm-type="done"
+                    confirm-hold="true"
+                    placeholder="参与人数"
+                    value="{{numbers}}"
+                    name="numbers"
+                    bindinput="del"
+                />
+            </view>
+        </view>
+        <view class='tip detail'>
+            <view>
+                <text>发起人备注：</text>
+                <textarea 
+                    placeholder='在此输入备注'
+                    placeholder-style="font-size:16px;"
+                    name='tips'
+                    maxlength="100"
+                >
+                </textarea>
+            </view>
+        </view>
+        <view class='detail btn'>
+            <button form-type='submit'>发起约球</button>
+        </view>
+    </form>
+</view>

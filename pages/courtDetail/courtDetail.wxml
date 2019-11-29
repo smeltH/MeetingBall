@@ -1,0 +1,5 @@
+<!--pages/nearCourt/nearCourt.wxml-->
+<import src="/template/searchCourtList/searchCourtList"/>
+<view class='nearCourt' wx:for="{{courtMessage}}" wx:key="_id">
+    <template is="searchCourtList" data="{{item}}"/>
+</view>

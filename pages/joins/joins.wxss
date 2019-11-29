@@ -1,0 +1,13 @@
+/* pages/joins/joins.wxss */
+@import '/template/meet_page/meet_page';
+.meetTop{
+    position: relative;
+}
+.outTime{
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    color: #111;
+    font-size: 18px;
+    font-weight: bold;
+}

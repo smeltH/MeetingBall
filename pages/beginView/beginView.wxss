@@ -1,0 +1,37 @@
+/* pages/beginView/beginView.wxss */
+.bgeinPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #44dcf0;
+}
+.bgeinPage .logo{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.bgeinPage .btn{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+.bgeinPage .logo image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.bgeinPage .btn button{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    color: #fff;
+    background-color: #5276b9;
+}
+.bgeinPage .btn button::after{
+    border: none;
+}

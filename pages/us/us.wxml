@@ -1,0 +1,25 @@
+<!--pages/us/us.wxml-->
+<view class='us'>
+    <view class='top'>
+        <view class='head_pic'>
+            <image src='{{userInfo.avatarUrl}}'></image>
+        </view>
+        <view class='user_name'>
+            <text>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+    <view class='aboutMe'>
+        <view class='detail title'>
+            <image src='/img/game.png' class='pic'></image>
+            <text>我的比赛</text>
+        </view>
+        <view class='detail' bindtap='mySend'>
+            <text>我发起的</text>
+            <image src='/img/arrow-r.png' class='go_detail'></image>
+        </view>
+        <view class='detail' bindtap='myJoin'>
+            <text>我参与的</text>
+            <image src='/img/arrow-r.png' class='go_detail'></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,43 @@
+<import src='/template/near_court/near_court'/>
+<import src='/template/searchCourtList/searchCourtList'/>
+<!--头部导航-->
+<view class='header'>
+    <view class='location'>
+        <image src='/img/local.png'></image>
+        <text>{{area}}</text>
+    </view>
+    <view class='search_box'>
+        <form class='form_search_box' bindsubmit='searchCourt' form-type='submit'>
+            <input placeholder='请输入球场名称或地址' placeholder-style='color:#ccc; font-size:14px;background-color:#fff' type='text' confirm-type='search' name="courtName" value='{{inputValue}}'/>
+            <button form-type='submit' hover-class="none">
+                <view>
+                    搜索
+                </view>
+            </button>
+        </form>
+    </view>
+</view>
+
+<!--首页轮播-->
+<view class='home_banner_show'>
+    <!-- <swiper>
+        <swiper-item>
+            <image src="{{item}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+    </swiper> -->
+    <image src='/img/bg.jpg' mode='aspectFill'></image>
+</view>
+
+<!-- 搜索附近球场按钮 -->
+<view class='near_court'>
+    <navigator url='/pages/courtList/courtList' target='self' hover-class="none">
+        <button hover-class="none">
+            查找附近球场
+        </button>
+    </navigator>
+    <view class='courts'>
+        <view wx:for="{{showFourCourts}}" wx:key="_id">
+            <template is="nearCourt" data="{{item}}"/>
+        </view>
+    </view>
+</view>

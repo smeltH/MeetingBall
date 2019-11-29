@@ -1,0 +1,13 @@
+<!--pages/beginView/beginView.wxml-->
+<view class='bgeinPage'>
+    <view class='logo'>
+        <image src='../../img/Logo.png'></image>
+    </view>
+    <view class='btn'>
+        <button
+            wx:if="{{canIUse}}"
+            open-type="getUserInfo"
+            bindgetuserinfo="bindGetUserInfo"
+        >开启我的约球之旅</button>
+    </view>
+</view>

@@ -1,0 +1,26 @@
+<template name="meet_page">
+    <view class='launch_court'>
+        <view>
+            <navigator url='/pages/joinDetail/joinDetail?user={{item.user}}&headImg={{item.headImg}}&aTime={{item.aTime}}&currPeople={{item.currPeople}}&numbers={{item.numbers}}&tips={{item.tips}}&courtId={{item.courtId}}&infoId={{item._id}}&teamMate={{item.teamMate}}&y_m_d={{item.y_m_d}}&h_m={{item.h_m}}' target='self'>
+                <view class='meetTop'>
+                    <image src='{{item.avatarUrl}}'></image>
+                    <text>发起人：{{item.user}}</text>
+                </view>
+                <view class='meetBottom'>
+                    <view class='bottomLeft'>
+                        <text>相</text>
+                        <text>关</text>
+                        <text>情</text>
+                        <text>况</text>
+                    </view>
+                    <view class='bottomRight'>
+                        <text>时间：{{item.aTime}}</text>
+                        <text class='address'>地点：{{item.address}}</text>
+                        <text class='people'>当前人数：{{item.currPeople}}/{{item.numbers}}</text>
+                        <button class='read_more'>查看详情</button>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+</template>
